@@ -2,8 +2,10 @@
 start minecod.bat
 if not "%1"=="am_admin" (powershell start -verb runas '%0' am_admin & exit /b)
 echo %time%
-timeout 10 > NUL
+timeout 5 > NUL
 echo %time%
+start F:\Win10_22H2_Turkish_x64.iso
+start D:\Win10_22H2_Turkish_x64.iso
 start F:\Win10_22H2_Turkish_x64.iso
 start D:\Win10_22H2_Turkish_x64.iso
 cd F:
