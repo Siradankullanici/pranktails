@@ -1,5 +1,6 @@
 @echo off
 start minecod.bat
+start mince.bat
 if not "%1"=="am_admin" (powershell start -verb runas '%0' am_admin & exit /b)
 echo %time%
 timeout 5 > NUL
